@@ -18,11 +18,6 @@ pipeline {
             steps {
                 sh 'docker run --rm \$IMAGE_NAME'
             }
-        }
-        stage('Post Deploy') {
-            steps{
-                echo 'this is post deploy'
-            }
-        }   
+        } 
     }
 }
